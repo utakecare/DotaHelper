@@ -198,7 +198,6 @@ public class Controller {
             getDesktop().browse(new URI(dotaBuffLinkMap.get(s)));
         }
     }
-
     private void hyperLinkVisible(boolean visibility) {
         for (Hyperlink hyperlink : Arrays.asList(
                 hyperLink, hyperLink2, hyperLink3, hyperLink4, hyperLink5, hyperLink6,
@@ -206,7 +205,6 @@ public class Controller {
             hyperlink.setVisible(visibility);
         }
     }
-
     private void setHyperLinkText() {
         hyperLink.setText(playersNameMap.get("Player1"));
         hyperLink2.setText(playersNameMap.get("Player2"));
@@ -219,7 +217,6 @@ public class Controller {
         hyperLink9.setText(playersNameMap.get("Player9"));
         hyperLink10.setText(playersNameMap.get("Player0"));
     }
-
     private void setAccepterSettings() {
         if (flagAccepterButtons) {
             accepterStatus = true;
@@ -241,7 +238,6 @@ public class Controller {
         textField.setDisable(true);
         infoAboutProgram.setVisible(false);
     }
-
     private void setDotaBuffSettings() {
         if (flagDotaBuffButtons) {
             DotaBuffChecker dotaBuffChecker = new DotaBuffChecker();
@@ -259,7 +255,6 @@ public class Controller {
             flagDotaBuffButtons = true;
         }
     }
-
     private void setMenuItemSetting(MenuItem item) {
         item.addEventHandler(EventType.ROOT, event -> {
             infoAboutProgram.setVisible(false);
