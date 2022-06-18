@@ -1,3 +1,5 @@
+package javaFXSettings;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,7 +19,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("sample.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/sample.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 316, 381);
         stage.getIcons().add(new Image("icon.jpg"));
         stage.setTitle("Accepter");

@@ -69,7 +69,7 @@ public class GameAccepter implements Runnable {
     }
 
     public void getComparedRGB() throws IOException {
-        BufferedImage acceptImage = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("staticImage.png")));
+        BufferedImage acceptImage = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/staticImage.png")));
         Color color = new Color(acceptImage.getRGB(width / 2, height / 2), false);
         MAX_RED_VALUE = color.getRed() + range;
         MIN_RED_VALUE = color.getRed() - range;
