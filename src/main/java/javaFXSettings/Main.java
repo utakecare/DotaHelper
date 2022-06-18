@@ -8,12 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static globalVariables.GlobalVariables.countCores;
 import static globalVariables.GlobalVariables.accepterStatus;
 public class Main extends Application {
 
     public static void main(String[] args) {
-        countCores = Runtime.getRuntime().availableProcessors();
         launch();
     }
 

@@ -33,7 +33,6 @@ public class DotaBuffChecker implements Runnable {
                 .trim());
         return readLastLine(file);
     }
-
     private List<String> getSteamIdList(String gameLog) {
         List<String> steamIdList = new ArrayList<>();
         for (int i = 0; i < totalPlayers; i++) {
@@ -41,7 +40,6 @@ public class DotaBuffChecker implements Runnable {
         }
         return steamIdList;
     }
-
     private String getSteamId(String gameLog, int i) {
         String steamId;
         if (i != 9) {
@@ -51,13 +49,11 @@ public class DotaBuffChecker implements Runnable {
         }
         return steamId;
     }
-
     private void setDotaBuffLinkMap(List<String> steamIdList) {
         for (int i = 0; i < totalPlayers; i++) {
             dotaBuffLinkMap.put("Player" + i, "https://www.dotabuff.com/players/" + steamIdList.get(i));
         }
     }
-
     private void setPlayersNameMap(List<String> steamIdList) {
         ExecutorService executorService = Executors.newFixedThreadPool(countCores);
         for (int i = 0; i < totalPlayers; i++) {
@@ -68,7 +64,6 @@ public class DotaBuffChecker implements Runnable {
         }
         executorService.shutdown();
     }
-
     private String readLastLine(File file) throws IOException {
         String result = null;
         try (RandomAccessFile raf = new RandomAccessFile(file, "r")) {

@@ -8,7 +8,7 @@ public class GlobalVariables {
     public static boolean accepterStatus = true;
     public static boolean flagAccepterButtons = true;
     public static boolean flagDotaBuffButtons = true;
-    public static int countCores;
+    public static int countCores = Runtime.getRuntime().availableProcessors();
     public static int totalPlayers = 10;
     public static int red = 0;
     public static int green = 1;

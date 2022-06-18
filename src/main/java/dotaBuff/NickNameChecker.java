@@ -42,7 +42,6 @@ public class NickNameChecker implements Runnable {
     }
     private String getJsonFormat(String urlAdress) throws IOException {
         StringBuilder content = new StringBuilder();
-
         URL url = new URL(urlAdress);
         URLConnection urlConn = url.openConnection();
         BufferedReader bufferedReader = new BufferedReader(
