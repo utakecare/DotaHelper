@@ -11,5 +11,4 @@ public class MyTelegramBot extends DefaultAbsSender {
     public String getBotToken() {
         return "5483917791:AAHtEg-rcSnYn0MYW-mT8gyqdzvVGPXSzDE";
     }
-
 }
